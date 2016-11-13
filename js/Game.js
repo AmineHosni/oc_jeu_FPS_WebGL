@@ -1,10 +1,10 @@
 // Page entièrement chargé, on lance le jeu
-
-
 Game = function(canvasId) {
+
     document.addEventListener("DOMContentLoaded", function () {
-    new Game('renderCanvas');
-}, false);
+        new Game('renderCanvas');
+    }, false);
+    
     // Canvas et engine défini ici
     var canvas = document.getElementById(canvasId);
     var engine = new BABYLON.Engine(canvas, true);
